@@ -1,0 +1,39 @@
+1.股票数据采集入库
+http://tushare.org/trading.html#id2 历史行情
+http://tushare.org/trading.html#id9大单交易数据（短线）
+http://tushare.org/classifying.html#id3 概念分类
+http://tushare.org/fundamental.html#id2 股票列表
+
+2.股票采集工具（python3相关数据分析工具包）
+ python3及相关数据分析工具包
+https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda3-4.3.0-Windows-x86_64.exe
+
+tushare
+https://pypi.python.org/packages/0a/ca/ad9eeed1c285c58d115a0dd82734e5375abf1b6e510c7c24f2f8de921c75/tushare-0.6.8.tar.gz
+
+PyMySQL
+https://pypi.python.org/packages/a4/c4/c15457f261fda9839637de044eca9b6da8f55503183fe887523801b85701/PyMySQL-0.7.9.tar.gz#md5=bf82311ac2df4c43adad003a8c805b90
+
+数据库客户端
+http://dl.download.csdn.net/down10/20130924/e8a988ae9e65377d8b8e041f1fe5ba83.exe?response-content-disposition=attachment%3Bfilename%3D%22navicat9_lite_cs.exe%22&OSSAccessKeyId=9q6nvzoJGowBj4q1&Expires=1487059512&Signature=nCGS%2FyL5SPSGT3u64YEscL4z19s%3D
+
+mariadb数据库
+http://mirror.nodesdirect.com/mariadb//mariadb-10.1.21/winx64-packages/mariadb-10.1.21-winx64.msi
+
+3.选股界面化工具 PYTHON, 使用FLASK开发选股界面
+PyDev4.5.5
+http://dl.download.csdn.net/down11/20160419/606ab50f6e2a52a19f064c5edba75b1a.zip?response-content-disposition=attachment%3Bfilename%3D%22PyDev%204.5.5.zip%22&OSSAccessKeyId=9q6nvzoJGowBj4q1&Expires=1486953191&Signature=LlRnrsDGMeCxy%2FJyb7c%2BGMia40k%3D
+
+Jinja2模板
+https://pypi.python.org/packages/71/59/d7423bd5e7ddaf3a1ce299ab4490e9044e8dfd195420fc83a24de9e60726/Jinja2-2.9.5.tar.gz#md5=9e55f0db6620dd99a1b366183a94270d
+
+Werkzeug wsgi工具
+https://pypi.python.org/packages/fe/7f/6d70f765ce5484e07576313897793cb49333dd34e462488ee818d17244af/Werkzeug-0.11.15.tar.gz#md5=cb4010478dd33905f95920e4880204a2
+
+Flask mvc框架
+https://pypi.python.org/packages/4b/3a/4c20183df155dd2e39168e35d53a388efb384a512ca6c73001d8292c094a/Flask-0.12.tar.gz#md5=c1d30f51cff4a38f9454b23328a15c5a
+
+pymongo pymongo工具
+https://pypi.python.org/packages/82/26/f45f95841de5164c48e2e03aff7f0702e22cef2336238d212d8f93e91ea8/pymongo-3.4.0.tar.gz#md5=aa77f88e51e281c9f328cea701bb6f3e
+
+

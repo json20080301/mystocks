@@ -1,0 +1,54 @@
+
+十分钟搞定pandas
+http://www.cnblogs.com/chaosimple/p/4153083.html
+
+DataFrame导入数据库
+http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_sql.html
+
+
+===============代码片段===============
+import pandas as pd
+from sqlalchemy import Column, String,VARCHAR,INTEGER, create_engine , engine_from_config
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+import tushare as ts
+
+# print(ts.__version__)
+# 
+# ts.get_k_data('600848')
+data = {'state':['Ohino','Ohino','Ohino','Nevada','Nevada'],
+        'year':[2000,2001,2002,2001,2002],
+        'pop':[1.5,1.7,3.6,2.4,2.9]}
+
+
+df = pd.DataFrame(data,index=[0,1,2,3,4], columns=['year','state','pop','debt'])
+ 
+print (df.to_json(orient='records') )
+
+
+if  ((df['pop'].max() + df['pop'].min()) /2 >  df['pop'].min())  and (df['pop'].max() ==3.6):
+    print('stock no is ')
+    print(df['pop'][0])
+    print(df['pop'].min())
+    print(df['pop'].max())
+    print((df['pop'].max() + df['pop'].min()) /2 )
+    print(df.head(1))
+    print('===============')
+    
+    
+    
+#
+for name in df.index:
+    print(name)
+    
+config = {
+      'sqlalchemy.url':'mysql+pymysql://root:root@127.0.0.1/test?charset=utf8',
+      'sqlalchemy.echo':True
+      };
+# df = ts.get_tick_data('600848', date='2014-12-22')
+# engine = create_engine(config['sqlalchemy.url'], echo=True)
+# http://docs.sqlalchemy.org/en/latest/core/type_basics.html#sql-standard-and-multiple-vendor-types
+# http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_sql.html
+engine = engine_from_config(config);
+df.to_sql('tick_data',engine,if_exists='replace',index=False,dtype= {'state': VARCHAR(300) ,'year':INTEGER})
+ 
